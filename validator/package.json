@@ -1,0 +1,17 @@
+{
+    "name": "validator",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start": "node index.js",
+        "start:dapr": "dapr run --app-port 5000 --app-id validator --app-protocol http --dapr-http-port 3501 --resources-path ../components -- npm run start"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "@dapr/dapr": "^2.3.0"
+    }
+}
